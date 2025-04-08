@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap Site</title>
+</head>
+
+<body>
+<header class="bg-primary text-white mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col py-5">
+                <h1 class="text-center text-warning">My Bootstrap site</h1>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary bg-dark"  data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">The Best Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navbar" aria-controls="primary-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="primary-navbar">
+                <ul class="navbar-nav ul-auto mb-2 mb-lg-0 column-gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalog IM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Motors</a></li>
+                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Health & Beauty</a></li>
+                            <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About site</a>
+                    </li>
+                    <li class="nav-item">   
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<article>
+    <div class="container">
+        <div class="row g-1 py-4">
+            <aside class="col-xxl-3 col-xl-4 col-xl-6 column-gap-2 mb-3">
+                <div id="primary-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#primary-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#primary-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#primary-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#primary-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/img/alley.jpg" class="d-block w-100" alt="allay">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/house.jpg" class="d-block w-100" alt="house">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/grasshopper.jpg" class="d-block w-100" alt="grasshopper">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/winter.jpg" class="d-block w-100" alt="winter">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#primary-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#primary-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </aside>       
+
+            <div class="col-xxl-6 col-xl-6 mb-4">
+                <div class="accordion" id="products-Accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Electronics
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#products-Accordion">
+                            <div class="accordion-body">
+                                <strong>Electronics categories.</strong> Explore a wide range of electronics including smartphones, laptops, cameras, and more. Find the latest gadgets and devices to suit your needs, all with cutting-edge technology and innovative features.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Motors
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#products-Accordion">
+                            <div class="accordion-body">
+                                <strong>Motors categories.</strong> Discover a variety of motor vehicles, including cars, motorcycles, trucks, and more. Whether you're looking for speed, utility, or style, explore options that suit your needs and preferences.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Sports
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#products-Accordion">
+                            <div class="accordion-body">
+                                <strong>Sports categories.</strong> Discover a wide range of sports equipment, apparel, and accessories. From fitness gear to outdoor sports essentials, find everything you need to stay active and enjoy your favorite activities.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Fashion
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#products-Accordion">
+                            <div class="accordion-body">
+                                <strong>Fashion categories.</strong> Discover the latest trends in clothing, footwear, and accessories. From casual wear to formal attire, explore a variety of styles to express your personality and elevate your wardrobe.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Health & Beauty
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#products-Accordion">
+                            <div class="accordion-body">
+                                <strong>Health & Beauty categories.</strong> Discover a variety of products to enhance your well-being and appearance. From skincare and cosmetics to fitness and wellness essentials, find everything you need to look and feel your best.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Home & Garden
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#products-Accordion">
+                            <div class="accordion-body">
+                                <strong>Home & Garden categories.</strong> Explore a variety of products to enhance your living space and outdoor areas. From furniture and decor to gardening tools and accessories, find everything you need to create a comfortable and stylish home environment.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-xxl-3 col-xl-12 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Registration Form</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</article>
+
+<footer class="bg-secondary text-center text-white mt-5 py-4">
+    <div class="container mb-1 py-1">
+        <div class="row">
+            <div class="col">
+                <h4>MY BOOTSTRAP SITE</h4>
+                <p>&copy; 2025 Bootstrap Site</p>
+            </div>
+        </div>
+    </div>    
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
